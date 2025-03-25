@@ -42,12 +42,12 @@ class ListaProduto extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(6.0),
                           child: FittedBox(
-                            child: Text('R\$${tr.preco * tr.quantidade}'),
+                            child: Text('${tr.quantidade}'),
                           ),
                         ),
                       ),
                       subtitle: Text(
-                        'Quantidade: ${tr.quantidade}',
+                            'R\$${tr.preco * tr.quantidade}',
                         style: TextStyle(fontSize: 16, color: Colors.grey[700]),
                       ),
                       trailing: IconButton(
